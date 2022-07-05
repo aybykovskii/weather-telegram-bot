@@ -1,19 +1,3 @@
-import { SendMessageOptions } from 'node-telegram-bot-api'
-
-export const FORCE_REPLY: SendMessageOptions = {
-  reply_markup: {
-    force_reply: true,
-    resize_keyboard: true,
-    keyboard: [
-      [
-        {
-          request_location: true,
-          text: 'Узнать погоду в моем местоположении',
-        },
-      ],
-    ],
-  },
-}
 export enum Weather {
   CLEAR_SKY = 'CLEAR_SKY',
   FEW_CLOUDS = 'FEW_CLOUDS',
@@ -37,7 +21,6 @@ export const WEATHER_ICON: Record<number, Weather> = {
   13: Weather.SNOW,
   50: Weather.MIST,
 }
-
 export const WEATHER_STICKERS: Record<Weather, number> = {
   CLEAR_SKY: 7,
   FEW_CLOUDS: 2,

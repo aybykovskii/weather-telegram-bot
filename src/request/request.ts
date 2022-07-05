@@ -1,6 +1,8 @@
 import axios, { AxiosResponse } from 'axios'
 
-const WeatherInstance = axios.create({ baseURL: 'https://api.openweathermap.org/' })
+import { ENV } from '@helpers/environment'
+
+const WeatherInstance = axios.create({ baseURL: ENV.WEATHER_URL })
 
 export const Request = async <T>(url: string) =>
   WeatherInstance.get(url)

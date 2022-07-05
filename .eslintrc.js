@@ -35,6 +35,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'no-console': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
@@ -58,5 +59,21 @@ module.exports = {
     'import/no-unresolved': 'error',
     'import/prefer-default-export': 'off',
     '@typescript-eslint/naming-convention': 'off',
+    'import/order': [
+      'warn',
+      {
+        'newlines-between': 'always',
+        groups: [['builtin', 'external'], 'internal', 'parent', 'sibling'],
+      },
+    ],
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+      { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+      { blankLine: 'always', prev: '*', next: ['if', 'for', 'switch', 'while', 'do', 'case', 'default'] },
+      { blankLine: 'always', prev: 'block-like', next: 'block-like' },
+      { blankLine: 'always', prev: 'multiline-const', next: 'multiline-const' },
+    ],
   },
 }

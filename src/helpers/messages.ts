@@ -1,3 +1,5 @@
+import { SendMessageOptions } from 'node-telegram-bot-api'
+
 import { GetWeatherType } from '@ts'
 
 export const getMessageText = ({
@@ -20,3 +22,18 @@ export const helloText = `
 Я бот, который позволяет узнавать погоду в любой точке мира.
 Ты можешь либо написать мне название населенного пункта, либо отправить его геолокацию через скрепку ниже.
 `
+
+export const FORCE_REPLY: SendMessageOptions = {
+  reply_markup: {
+    force_reply: true,
+    resize_keyboard: true,
+    keyboard: [
+      [
+        {
+          request_location: true,
+          text: 'Узнать погоду в моем местоположении',
+        },
+      ],
+    ],
+  },
+}
