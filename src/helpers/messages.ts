@@ -1,4 +1,4 @@
-import { GetWeatherType } from '../ts'
+import { GetWeatherType } from '@ts'
 
 export const getMessageText = ({
   name,

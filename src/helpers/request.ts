@@ -1,8 +1,8 @@
 import { stringify } from 'qs'
 
-import { Request } from '../request'
-import { GeocodingType, GetGeocodingType, GetWeatherType } from '../ts'
-import { GEOCODING_GET_URL, LANG, UNITS, WEATHER_GET_URL } from '../constants'
+import { Request } from '@request'
+import { GeocodingType, GetGeocodingType, GetWeatherType } from '@ts'
+import { GEOCODING_GET_URL, LANG, UNITS, WEATHER_GET_URL } from '@constants'
 
 import { ENV } from './environment'
 

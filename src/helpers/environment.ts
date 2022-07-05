@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import { ENV_KEYS } from '../ts'
+import { ENV_KEYS } from '@ts'
 import { GenericObject } from './object'
 
 class Environment {

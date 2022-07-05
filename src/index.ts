@@ -1,9 +1,8 @@
 import TelegramBot, { Message } from 'node-telegram-bot-api'
-import 'dotenv/config'
 
-import { GeocodingType } from 'ts'
-import { commands, FORCE_REPLY, WEATHER_ICON, WEATHER_STICKERS } from './constants'
-import { GetGeoCoding, GetWeather, getMessageText, ENV, helloText } from './helpers'
+import { GeocodingType } from '@ts'
+import { commands, FORCE_REPLY, WEATHER_ICON, WEATHER_STICKERS } from '@constants'
+import { GetGeoCoding, GetWeather, getMessageText, ENV, helloText } from '@helpers'
 
 const Bot = new TelegramBot(ENV.BOT_TOKEN, { polling: true })
 

@@ -69,9 +69,15 @@
 
     "resolveJsonModule": true,
     "paths": {
-      "src/*": ["./src/*"],
-      "ts": ["./src/ts/index"],
-      "ts/*": ["./src/ts/*"]
+      "@src/*": ["./src/*"],
+      "@ts": ["./src/ts/index"],
+      "@ts/*": ["./src/ts/*"],
+      "@request": ["./src/request/index"],
+      "@request/*": ["./src/request/*"],
+      "@constants": ["./src/constants/index"],
+      "@constants/*": ["./src/constants/*"],
+      "@helpers": ["./src/helpers/index"],
+      "@helpers/*": ["./src/helpers/*"]
     }
   },
   "exclude": [

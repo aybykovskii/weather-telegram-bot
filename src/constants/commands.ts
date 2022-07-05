@@ -1,5 +1,5 @@
 import { BotCommand } from 'node-telegram-bot-api'
-import { Commands } from '../ts'
+import { Commands } from '@ts'
 
 export const commands: Partial<Record<Commands, BotCommand>> = {
   START: {
