@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "nodemonConfig": {
-    "ignore": ["node_modules"],
+    "ignore": [
+      "node_modules"
+    ],
     "ext": "ts",
     "exec": "node -r tsconfig-paths/register -r ts-node/register"
   },
@@ -18,6 +20,7 @@
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "node-telegram-bot-api": "0.57.0",
+    "nodemon": "^2.0.19",
     "qs": "^6.10.5",
     "ts-node": "^10.8.1",
     "tsconfig-paths": "^4.0.0",
